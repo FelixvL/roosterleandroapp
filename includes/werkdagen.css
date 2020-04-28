@@ -1,0 +1,179 @@
+table{
+    border-collapse: collapse;
+
+}
+.optie{
+    background-color: red !important; 
+}
+body{
+    background-color: rgb(221, 241, 253);
+    font-family: 'Courier New', Courier, monospace;
+}
+table.buitenkant{
+    border: 1px solid white;
+}
+th{
+    background-color:lightgrey;
+}
+td.maand{
+    background-color:rgb(31, 48, 31);
+    color:white;
+}
+td.weeknr{
+    font-size: 9px;
+    background-color:rgb(1, 55, 73);
+    padding : 3px;
+    padding-left : 15px;
+    color:white;
+}
+.annuleerbutton{
+    margin:5px;
+    background-color:white;
+    font-size:medium;
+    border:2px solid red;
+    padding:10px;
+    border-radius:5px;
+}
+.betaaldbutton{
+    margin:5px;
+    color:white;
+    font-size:medium;
+    background-color:green;
+    border: 2px solid white;
+    padding:10px;
+    border-radius:5px;
+}
+.verwijderbutton{
+    color:white;
+    font-size:medium;
+    background-color:red;
+    border: 2px solid white;
+    padding:2px;
+    border-radius:5px;
+}
+select{
+    font-size:22px;
+    width:200px;
+    padding:5px;
+}
+option{
+    padding:3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+option:hover{
+    background-color:lightgray;
+    
+}
+.utrechtQ{
+    background-color: rgb(160, 51, 160);
+}
+.leiden{
+    background-color: rgb(37, 143, 37);
+}
+.amsterdam{
+    background-color: rgb(209, 160, 69);
+}
+.groningen{
+    background-color: rgb(59, 132, 156);
+}
+.zwolle{
+    background-color: rgb(179, 105, 105);
+}
+.utrechtATA{
+    background-color: rgb(206, 206, 102);
+}
+.zaandam{
+    background-color: rgb(94, 223, 202);
+}
+.vrij{
+    background-color: rgb(219, 218, 218);
+}
+td{
+    padding:12px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+tr:first-child td:first-child { border-top-left-radius: 7px; }
+tr:first-child td:last-child { border-top-right-radius: 7px; }
+tr:last-child td:first-child { border-bottom-left-radius: 7px; }
+tr:last-child td:last-child { border-bottom-right-radius: 7px; }
+tbody tr:last-child td {
+    border-bottom: 1px dashed rgb(1, 55, 73);
+  }
+  
+  tbody tr:last-child td:first-of-type,
+  tbody tr:last-child td:last-of-type {
+    border-bottom-width: 0;
+  }
+
+/* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    top:-8px;
+    left:3px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius:5px;
+    border: 1px solid red;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
